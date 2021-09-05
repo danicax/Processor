@@ -1,0 +1,87 @@
+set #2	
+lrm r1, #7
+set #0
+lrm r1, #3
+set #2
+lrm r2, #5
+lsa r1, r2
+lrm r0, #0
+lsa r0, r1
+set #0
+lsa r4, #0
+lsa r2, #1
+lsa r3, #2
+set #1
+bor r2
+set #3
+lrm r3
+set #2
+lrm r1, #3
+lsa r0, r1
+lrm r3, #0
+lrm r6, #0
+FOR1:			
+set #2
+lsa r3, r6
+bor END1
+lrm r1, #2
+set #0
+lrm r1, #4
+snxa r1, r1
+rxor r2, r1
+lrm r2, #7
+bor r1, r2
+set #1
+lsa r1, #0
+snxa r0, r0
+set #2
+lrm r2, #1
+lsa r0, r2
+lsa r3, r2
+lrm r6, #0
+lsa r6, r3
+lrm r3, #0
+set #3
+bor FOR1
+END1:
+set #2
+lrm r3, #0
+lrm r6, #0
+lrm r4, #3
+lrm r2, #1
+set #0
+lrm r4, #4
+set #2
+lsa r4, r2
+FOR2:
+set #2
+lsa r3, r6
+bor END2
+lrm r5, #0
+lsa r5, r0
+lrm r0, #0
+lsa r0, r3
+set #0
+lsa r1, #0
+snxa r1, r1
+rxor r2, r1
+lrm r2, #7
+bor r1, r2
+set #2
+lrm r0, #0
+lsa r0, r5
+set #1
+lsa r1, #0
+snxa r0, r0
+set #2	
+lrm r2, #1
+lsa r0, r2
+lsa r3, r2
+lrm r6, #0
+lsa r6, r3
+lrm r3, #0
+set #3
+bor FOR2
+END2:
+DONE
+
